@@ -50,3 +50,8 @@ ScrollReveal().reveal(".faq__image img", {
   ...scrollRevealOption,
   origin: "left",
 });
+
+ScrollReveal().reveal(".article__card", {
+  ...scrollRevealOption,
+  interval: 500,
+});

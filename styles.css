@@ -326,6 +326,55 @@ nav {
   display: block;
 }
 
+.section__container :is(.section__subheader, .section__header) {
+  text-align: center;
+}
+.article__container {
+}
+.section__subheader {
+}
+.section__header {
+}
+.article__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 1rem;
+}
+.article__card img {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.article__card div {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.about__card p {
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.article__card a {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.article__card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+@media screen and (min-width: 540px) {
+  .article__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (min-width: 768px) {
   nav {
     position: static;
@@ -386,5 +435,15 @@ nav {
 
   .faq__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .article__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .article__grid {
+    gap: 2rem;
   }
 }
