@@ -263,8 +263,6 @@ nav {
   line-height: 2rem;
 }
 
-.section__container {
-}
 .faq__container {
   display: grid;
   gap: 2rem;
@@ -283,12 +281,6 @@ nav {
   margin-bottom: 1rem;
 }
 
-.section__subheader {
-}
-.section__header {
-}
-.section__description {
-}
 .faq__grid {
   margin-top: 1rem;
   display: grid;
@@ -300,7 +292,6 @@ nav {
   display: grid;
   gap: 10px;
   background-color: var(--extra-light);
-  /* border: 5px solid; */
 }
 
 .faq__header {
@@ -324,8 +315,6 @@ nav {
 
 .faq__card.active .faq__header span {
   transform: rotate(180deg);
-}
-.ri-arrow-down-s-line {
 }
 
 .faq__description {
@@ -393,5 +382,9 @@ nav {
   }
   .about__card {
     padding: 5rem 2rem;
+  }
+
+  .faq__container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
