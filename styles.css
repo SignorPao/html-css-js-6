@@ -151,10 +151,6 @@ nav {
   display: none;
 }
 
-.section__container {
-  padding-block: 10rem;
-}
-
 .header__container p {
   margin-bottom: 1rem;
   color: var(--white);
@@ -326,7 +322,7 @@ nav {
   display: block;
 }
 
-.section__container :is(.section__subheader, .section__header) {
+.client__container :is(.section__subheader, .section__header) {
   text-align: center;
 }
 
@@ -364,24 +360,16 @@ nav {
   color: var(--text-dark);
 }
 
-.section__container {
-}
-.client__container {
-}
 .section__subheader :is(.section__subheader, .section__header) {
   text-align: center;
 }
-.section__header {
-}
+
 .swiper {
   margin-top: 2rem;
   width: 100%;
   padding-bottom: 3rem;
 }
-.swiper-wrapper {
-}
-.swiper-slide {
-}
+
 .client__card {
   max-width: 600px;
   margin-inline: auto;
@@ -399,8 +387,7 @@ nav {
   line-height: 1.75rem;
   color: var(--text-dark);
 }
-.ri-double-quotes-l {
-}
+
 .client__details {
   display: flex;
   align-items: center;
@@ -426,8 +413,38 @@ nav {
   color: var(--text-light);
   text-align: left;
 }
+
 .swiper-pagination-bullet-active {
   background-color: var(--primary-color);
+}
+
+.banner {
+  background-color: var(--extra-light);
+}
+
+.banner__container {
+  display: grid;
+  gap: 2rem;
+}
+
+.banner__content .section__header {
+  margin-bottom: 1rem;
+}
+
+.banner__form form {
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner__form input {
+  width: 100%;
+  padding: 0.75rem;
+  outline: none;
+  border: thin solid var(--text-light);
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 540px) {
@@ -500,6 +517,11 @@ nav {
 
   .article__grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .banner__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
 }
 
