@@ -515,6 +515,14 @@ nav {
   text-align: center;
 }
 
+.footer__bar a {
+  color: inherit;
+}
+
+.footer__bar a:hover {
+  color: var(--primary-color);
+}
+
 @media screen and (min-width: 540px) {
   .article__grid {
     grid-template-columns: repeat(2, 1fr);

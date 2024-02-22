@@ -62,3 +62,7 @@ ScrollReveal().reveal(".article__card", {
   ...scrollRevealOption,
   interval: 500,
 });
+
+const thisYear = new Date().getFullYear(),
+  year = document.getElementById("year");
+year.innerHTML = `${thisYear}`;
